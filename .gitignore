@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/TGNH/.vs/TGNH
+/TGNH/TGNH.Panel/bin/Debug/net8.0
+/TGNH/TGNH.Panel/obj
