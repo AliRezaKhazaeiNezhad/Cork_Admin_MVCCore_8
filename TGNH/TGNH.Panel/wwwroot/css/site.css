@@ -20,3 +20,31 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+.horizontal-menu{
+    background-color : #335;
+    overflow:hidden;
+}
+.horizontal-menu ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:space-around;
+} 
+
+.horizontal-menu li {
+    display:inline;
+}
+.horizontal-menu li a{
+    display:block;
+    color:wheat;
+    text-align:center;
+    padding:14px 20px;
+    text-decoration:none;
+}
+
+.horizontal-menu li a:hover{
+    background-color: #111;
+}
