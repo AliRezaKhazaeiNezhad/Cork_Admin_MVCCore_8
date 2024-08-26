@@ -15,12 +15,14 @@ namespace TGNH.Panel.Controllers
 
         public IActionResult Index()
         {
-            return View();
-        }
+            var model = new DashbordViewModel
+            {
+                TotalUsers = 100,
+                TotalComments = 200,
+                TotalPost = 300,
+            };
 
-        public IActionResult Privacy()
-        {
-            return View();
+            return View(model);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

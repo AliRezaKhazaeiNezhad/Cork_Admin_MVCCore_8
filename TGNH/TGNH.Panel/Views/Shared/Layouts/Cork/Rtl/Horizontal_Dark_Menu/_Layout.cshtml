@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="fa-IR">
+
+<head>
+    <meta charset="utf-8">
+
+    <partial name="Layouts/Cork/Rtl/PartialViews/_Seo" />
+
+    <partial name="Layouts/Cork/Rtl/PartialViews/_OpenGraph" />
+
+    <partial name="Layouts/Cork/Rtl/PartialViews/_FavoriteIcon" />
+
+    <partial name="Layouts/Cork/Rtl/PartialViews/_StyleSheetHM" />
+
+    @RenderSection(name: "StyleSheet", required: false)
+</head>
+<body class="layout-boxed enable-secondaryNav">
+
+    <partial name="Layouts/Cork/Rtl/Horizontal_Dark_Menu/PartialViews/_Loder" />
+    <partial name="Layouts/Cork/Rtl/Horizontal_Dark_Menu/PartialViews/_Navbar" />   
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        <partial name="Layouts/Cork/Rtl/Horizontal_Dark_Menu/PartialViews/_Sidebar" />
+
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+            <partial name="Layouts/Cork/Rtl/Horizontal_Dark_Menu/PartialViews/_Breadcrumbs" />
+
+            @(RenderBody())
+            <partial name="Layouts/Cork/Rtl/Horizontal_Dark_Menu/PartialViews/_Footer" />            
+        </div>
+        <!--  END CONTENT AREA  -->
+
+    </div>
+
+    <partial name="Layouts/Cork/Rtl/PartialViews/_ScriptsHM" />
+
+    @RenderSection(name: "Scripts", required: false)
+
+</body>
+</html>

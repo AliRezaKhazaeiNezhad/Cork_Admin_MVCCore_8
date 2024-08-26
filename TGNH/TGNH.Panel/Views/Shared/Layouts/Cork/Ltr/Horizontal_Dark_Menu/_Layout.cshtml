@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="icon" type="image/x-icon" href="~/Crok/ltr/src/assets/img/favicon.ico" />
+    <link href="~/Crok/ltr/layouts/horizontal_dark_menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
+@*     <link href="~/Crok/ltr/layouts/horizontal_dark_menu/css/light/loader.css" rel="stylesheet" type="text/css" />
+    <script src="~/Cork/ltr/layouts/horizontal-dark-menu/loader.js"></script> *@
+
+    @* <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet"> *@
+    <link href="~/Crok/ltr/src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Cork/ltr/layouts/horizontal-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="~/Cork/ltr/layouts/horizontal-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="~/Cork/ltr/src/assets/css/light/elements/alert.css" />
+    <link rel="stylesheet" type="text/css" href="~/Cork/ltr/src/assets/css/dark/elements/alert.css" />
+
+    <partial name="Layouts/Cork/Ltr/PartialViews/_Seo" />
+
+    <partial name="Layouts/Cork/Ltr/PartialViews/_OpenGraph" />
+
+    <partial name="Layouts/Cork/Ltr/PartialViews/_FavoriteIcon" />
+
+    <partial name="Layouts/Cork/Ltr/PartialViews/_StyleSheetHM" />
+
+    @RenderSection(name: "StyleSheet", required: false)
+</head>
+<body class="layout-boxed enable-secondaryNav">
+
+    <partial name="Layouts/Cork/Ltr/Horizontal_Dark_Menu/PartialViews/_Loder" />
+    <partial name="Layouts/Cork/Ltr/Horizontal_Dark_Menu/PartialViews/_Navbar" />
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        <partial name="Layouts/Cork/Ltr/Horizontal_Dark_Menu/PartialViews/_Sidebar" />
+
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+            <partial name="Layouts/Cork/Ltr/Horizontal_Dark_Menu/PartialViews/_Breadcrumbs" />
+
+            @(RenderBody())
+            <partial name="Layouts/Cork/Ltr/Horizontal_Dark_Menu/PartialViews/_Footer" />
+        </div>
+        <!--  END CONTENT AREA  -->
+
+    </div>
+    <!--  END MAIN CONTAINER  -->
+
+t>
+    <partial name="Layouts/Cork/Ltr/PartialViews/_ScriptsHM"/>
+    @RenderSection(name: "Scripts", required: false)
+
+</body>
+</html>

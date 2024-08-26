@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <partial name="Layouts/Cork/Ltr/PartialViews/_Seo" />
+
+    <partial name="Layouts/Cork/Ltr/PartialViews/_OpenGraph" />
+
+    <partial name="Layouts/Cork/Ltr/PartialViews/_FavoriteIcon" />
+
+    <partial name="Layouts/Cork/Ltr/PartialViews/_StyleSheetVM" />
+
+    @RenderSection(name: "StyleSheet", required: false)
+</head>
+<body class="layout-boxed">
+
+    <partial name="Layouts/Cork/Ltr/Vertical_Dark_Menu/PartialViews/_Loder" />
+    <partial name="Layouts/Cork/Ltr/Vertical_Dark_Menu/PartialViews/_Navbar" />
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        <partial name="Layouts/Cork/Ltr/Vertical_Dark_Menu/PartialViews/_Sidebar" />
+        <partial name="Layouts/Cork/Ltr/Vertical_Dark_Menu/PartialViews/_Breadcrumbs" />
+
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+
+            @(RenderBody())
+            <partial name="Layouts/Cork/Ltr/Vertical_Dark_Menu/PartialViews/_Footer" />
+        </div>
+        <!--  END CONTENT AREA  -->
+
+    </div>
+    <!--  END MAIN CONTAINER  -->
+
+    <partial name="Layouts/Cork/Ltr/PartialViews/_ScriptsVM" />
+
+    @RenderSection(name: "Scripts", required: false)
+
+</body>
+</html>

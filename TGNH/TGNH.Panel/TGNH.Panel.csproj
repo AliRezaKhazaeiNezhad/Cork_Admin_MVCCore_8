@@ -6,4 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Shared\Layouts\" />
+    <Folder Include="wwwroot\Crok\ltr\layouts\" />
+    <Folder Include="wwwroot\Crok\ltr\src\" />
+    <Folder Include="wwwroot\Crok\rtl\layouts\" />
+    <Folder Include="wwwroot\Crok\rtl\src\" />
+  </ItemGroup>
+
 </Project>

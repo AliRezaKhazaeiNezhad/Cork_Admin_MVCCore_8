@@ -1,0 +1,18 @@
+﻿@using Microsoft.AspNetCore.Mvc;
+<environment include="Development" exclude="Production">
+
+    <link href="~/css/fontgoogle_1.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/bootstrap/css/bootstrap.rtl.css" rel="stylesheet" type="text/css" asp-append-version="true" />
+    <link href="~/lib/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" type="text/css" asp-append-version="true" />
+
+</environment>
+
+<environment include="Production" exclude="Development">
+
+    <link href="~/css/fontgoogle_1.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css" asp-append-version="true" />
+    <link href="~/lib/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" type="text/css" asp-append-version="true" />
+
+</environment>
+
+<link rel="stylesheet" href="~/@(nameof(Microsoft.AspNetCore.Mvc)).styles.css" asp-append-version="true" />
