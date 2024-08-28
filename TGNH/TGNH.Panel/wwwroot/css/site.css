@@ -20,3 +20,43 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+@font-face{
+    font-family: 'IranSans';
+    src: url('../Fonts/IRANSansX-Bold.woff') format('woff'),
+        url('../Fonts/IRANSansX-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IranSanss';
+    src: url('../Fonts/IRANSansX-Regular.woff') format('woff'),
+        url('../Fonts/IRANSansX-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'IranSansss';
+    src: url('../Fonts/IRANSansXFaNum-Regular.woff') format('woff'),
+        url('../Fonts/IRANSansXFaNum-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-family: "IranSans" , sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "IranSans" , sans-serif;
+}
+span {
+    font-family: "IranSans", sans-serif;
+}
+a {
+    font-family: "IranSans", sans-serif;
+}
+body {
+    font-family: "IranSans", sans-serif;
+}
+
+

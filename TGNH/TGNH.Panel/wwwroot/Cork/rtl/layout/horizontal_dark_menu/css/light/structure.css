@@ -24,6 +24,20 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+
+
+@font-face{
+  font-family:'iransansX';
+  src: url('fonts/IRANSansX-Bold.woff') format('woff'),
+   url('fonts/IRANSansX-Bold.woff2') format('woff2'),
+   url('fonts//IRANSansX-Regular.woff') format('woff'),
+   url('fonts/IRANSansX-Regular.woff2') format('woff2'),
+   url('fonts/IRANSansXFaNum-Bold.woff') format('woff'),
+   url('fonts/IRANSansXFaNum-Bold.woff2') format('woff2'),
+   url('fonts/IRANSansXFaNum-Regular.woff') format('woff'),
+   url('fonts/IRANSansXFaNum-Regular.woff2') format('woff2');
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #3b3f5c;
 }

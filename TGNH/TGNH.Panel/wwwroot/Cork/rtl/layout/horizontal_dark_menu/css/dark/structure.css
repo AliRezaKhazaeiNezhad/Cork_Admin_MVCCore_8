@@ -14,19 +14,37 @@ html {
 }
 
 body.dark {
-  color: #888ea8;
-  height: 100%;
-  font-size: 0.875rem;
-  background: #060818;
-  overflow-x: hidden;
-  overflow-y: auto;
-  letter-spacing: 0.0312rem;
-  font-family: "Nunito", sans-serif;
+    color: #888ea8;
+    height: 100%;
+    font-size: 0.875rem;
+    background: #060818;
+    overflow-x: hidden;
+    overflow-y: auto;
+    letter-spacing: 0.0312rem;
+    font-family: "iransansX", sans-serif;
 }
+
+@font-face{
+    font-family:'iransansX';
+    src: url('fonts/IRANSansX-Bold.woff') format('woff'),
+        url('fonts/IRANSansX-Bold.woff2') format('woff2'),
+        url('fonts//IRANSansX-Regular.woff') format('woff'),
+        url('fonts/IRANSansX-Regular.woff2') format('woff2'),
+        url('fonts/IRANSansXFaNum-Bold.woff') format('woff'),
+        url('fonts/IRANSansXFaNum-Bold.woff2') format('woff2'),
+        url('fonts/IRANSansXFaNum-Regular.woff') format('woff'),
+        url('fonts/IRANSansXFaNum-Regular.woff2') format('woff2');
+}
+
+
+
+
+
+
 
 body.dark {
   /*Page title*/
-  /* 
+ /*  
   =====================
       Navigation Bar
   =====================

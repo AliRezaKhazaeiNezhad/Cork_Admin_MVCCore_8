@@ -14,23 +14,44 @@ html {
 }
 
 body {
-  color: #888ea8;
-  height: 100%;
-  font-size: 0.875rem;
-  background: #f1f2f3;
-  overflow-x: hidden;
-  overflow-y: auto;
-  letter-spacing: 0.0312rem;
-  font-family: "Nunito", sans-serif;
+    color: #888ea8;
+    height: 100%;
+    font-size: 0.875rem;
+    background: #f1f2f3;
+    overflow-x: hidden;
+    overflow-y: auto;
+    letter-spacing: 0.0312rem;
+    /*font-family: "iransansX", sans-serif;*/
 }
 
+@font-face{
+    font-family:'IransansX';
+    src: url('fonts/IRANSansX-Bold.woff') format('woff'),
+        url('fonts/IRANSansX-Bold.woff2') format('woff2'),
+        url('fonts//IRANSansX-Regular.woff') format('woff'),
+        url('fonts/IRANSansX-Regular.woff2') format('woff2'),
+        url('fonts/IRANSansXFaNum-Bold.woff') format('woff'),
+        url('fonts/IRANSansXFaNum-Bold.woff2') format('woff2'),
+        url('fonts/IRANSansXFaNum-Regular.woff') format('woff'),
+        url('fonts/IRANSansXFaNum-Regular.woff2') format('woff2');
+}
+body {
+    font-family: "IransansX" sans-serif; 
+}
+span {
+    font-family: "IransansX" sans-serif;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
-  color: #3b3f5c;
+    color: #3b3f5c;
+    font-family: "IransansX" sans-serif;
 }
 
 a {
-  text-decoration: none;
-  background-color: transparent;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: "IransansX" sans-serif;
 }
 
 :focus {
@@ -38,9 +59,10 @@ a {
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 0.625rem;
-  color: #515365;
+    margin-top: 0;
+    margin-bottom: 0.625rem;
+    color: #515365;
+    font-family: "IransansX" sans-serif;
 }
 
 hr {
