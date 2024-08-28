@@ -51,19 +51,19 @@ body {
 }
 
 p {
-    font-family: "IranSansBold", sans-serif;
+    font-family: "IranSansRegular", sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 ,b {
     font-family: "IranSansBold", sans-serif;
 }
 span {
-    font-family: "IranSansBold", sans-serif;
+    font-family: "IranSansRegular", sans-serif;
 }
 a {
-    font-family: "IranSansBold", sans-serif;
+    font-family: "IranSansRegular", sans-serif;
 }
 body {
-    font-family: "IranSansBold", sans-serif;
+    font-family: "IranSansRegular", sans-serif;
 }
 
 
