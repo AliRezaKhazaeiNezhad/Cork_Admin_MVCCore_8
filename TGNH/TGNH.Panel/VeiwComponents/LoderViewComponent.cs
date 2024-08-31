@@ -3,9 +3,9 @@ namespace TGNH.Panel.Areas.Loder.ViewComponents
 {
     public class LoderViewComponent: ViewComponent 
     {
-        public IViewComponentResult Invoke()
+        public async Task<IViewComponentResult> InvokeAsync()
         {
-            return View("Loder");
+            return await Task.FromResult(View("Loder"));
         }
     }
 }
