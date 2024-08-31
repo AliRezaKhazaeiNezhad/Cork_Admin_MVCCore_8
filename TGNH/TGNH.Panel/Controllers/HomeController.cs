@@ -13,18 +13,6 @@ namespace TGNH.Panel.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
-        {
-            var model = new DashbordViewModel
-            {
-                TotalUsers = 100,
-                TotalComments = 200,
-                TotalPost = 300,
-            };
-
-            return View(model);
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
