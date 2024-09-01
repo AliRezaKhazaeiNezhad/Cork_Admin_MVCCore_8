@@ -7,47 +7,27 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="VeiwComponents\BreadcrumbsViewComponent.cs" />
+    <Compile Remove="Views\Shared\Layouts\**" />
+    <Compile Remove="wwwroot\Crok\**" />
+    <Content Remove="Views\Shared\Layouts\**" />
+    <Content Remove="wwwroot\Crok\**" />
+    <EmbeddedResource Remove="Views\Shared\Layouts\**" />
+    <EmbeddedResource Remove="wwwroot\Crok\**" />
+    <None Remove="Views\Shared\Layouts\**" />
+    <None Remove="wwwroot\Crok\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="VeiwComponents\FavoriteIconViewComponent.cs" />
-    <Compile Remove="VeiwComponents\FooterViewComponent.cs" />
-    <Compile Remove="VeiwComponents\LoderViewComponent.cs" />
-    <Compile Remove="VeiwComponents\NavbarViewComponent.cs" />
     <Compile Remove="VeiwComponents\OpenGraphViewComponent.cs" />
     <Compile Remove="VeiwComponents\ScriptsHMViewComponent.cs" />
     <Compile Remove="VeiwComponents\ScriptsMMViewComponent.cs" />
     <Compile Remove="VeiwComponents\ScriptsVMViewComponent.cs" />
     <Compile Remove="VeiwComponents\SeoViewComponent.cs" />
-    <Compile Remove="VeiwComponents\SidebarViewComponent.cs" />
     <Compile Remove="VeiwComponents\StyleSheetHMViewComponent.cs" />
     <Compile Remove="VeiwComponents\StyleSheetMMViewComponent.cs" />
     <Compile Remove="VeiwComponents\StyleSheetViewComponent.cs" />
     <Compile Remove="VeiwComponents\StyleSheetVMViewComponent.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="VeiwComponents\BreadcrumbsViewComponent.cs" />
-    <Content Include="VeiwComponents\FavoriteIconViewComponent.cs" />
-    <Content Include="VeiwComponents\FooterViewComponent.cs" />
-    <Content Include="VeiwComponents\LoderViewComponent.cs" />
-    <Content Include="VeiwComponents\NavbarViewComponent.cs" />
-    <Content Include="VeiwComponents\OpenGraphViewComponent.cs" />
-    <Content Include="VeiwComponents\ScriptsHMViewComponent.cs" />
-    <Content Include="VeiwComponents\ScriptsMMViewComponent.cs" />
-    <Content Include="VeiwComponents\ScriptsVMViewComponent.cs" />
-    <Content Include="VeiwComponents\SeoViewComponent.cs" />
-    <Content Include="VeiwComponents\SidebarViewComponent.cs" />
-    <Content Include="VeiwComponents\StyleSheetHMViewComponent.cs" />
-    <Content Include="VeiwComponents\StyleSheetMMViewComponent.cs" />
-    <Content Include="VeiwComponents\StyleSheetViewComponent.cs" />
-    <Content Include="VeiwComponents\StyleSheetVMViewComponent.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\Shared\Layouts\" />
-    <Folder Include="wwwroot\Crok\ltr\layouts\" />
-    <Folder Include="wwwroot\Crok\ltr\src\" />
-    <Folder Include="wwwroot\Crok\rtl\layouts\" />
-    <Folder Include="wwwroot\Crok\rtl\src\" />
   </ItemGroup>
 
   <ItemGroup>

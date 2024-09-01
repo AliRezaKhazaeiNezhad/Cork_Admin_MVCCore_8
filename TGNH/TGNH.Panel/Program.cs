@@ -12,6 +12,13 @@ if (!app.Environment.IsDevelopment())
 }
 app.UseStaticFiles();
 
+app.UseStatusCodePagesWithReExecute("/Error404");
+
+app.MapControllerRoute(
+     name: "Error404",
+     pattern: "/Error404",
+     defaults: new { controller = "Home", action = "Error404" });
+
 app.UseRouting();
 
 app.UseAuthorization();

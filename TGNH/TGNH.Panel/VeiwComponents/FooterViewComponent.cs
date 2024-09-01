@@ -11,5 +11,3 @@ namespace TGNH.Panel.Areas.Footer.ViewComponents
     }
 
 }
-
-
