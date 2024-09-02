@@ -1,0 +1,27 @@
+﻿@model IEnumerable<TGNH.Panel.Models.Student>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.Name</td>
+                <td>@student.Email</td>
+                <td>@student.Age</td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = student.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = student.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = student.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
