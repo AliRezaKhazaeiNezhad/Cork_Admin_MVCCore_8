@@ -8,19 +8,19 @@ namespace TGNH.Panel.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
 
+        public HomeController(ILogger<HomeController> Logger)
+        {
+            _logger = Logger;
+        }
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Error404()
         {
-            return View();
+            return ViewComponent("Error404");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

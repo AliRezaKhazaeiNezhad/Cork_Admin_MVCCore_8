@@ -21,30 +21,49 @@ body {
   margin-bottom: 60px;
 }
 
+/*@font-face{
+    font-family: 'IranSans';
+    src: url('../Fonts/IRANSansX-Bold.woff') format('woff'),
+        url('../Fonts/IRANSansX-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IranSanss';
+    src: url('../Fonts/IRANSansX-Regular.woff') format('woff'),
+        url('../Fonts/IRANSansX-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}*/
+@font-face{
+    font-family: 'IranSansRegular';
+    src: url('../Fonts/IRANSansXFaNum-Regular.woff') format('woff'),
+        url('../Fonts/IRANSansXFaNum-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family:'IranSansBold';
+    src: url('../Fonts/IRANSansXFaNum-Bold.woff') format('woff'),
+        url('../Fonts/IRANSansXFaNum-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
 
-.horizontal-menu{
-    background-color : #335;
-    overflow:hidden;
+p {
+    font-family: "IranSansRegular", sans-serif;
 }
-.horizontal-menu ul{
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    display:flex;
-    justify-content:space-around;
-} 
-
-.horizontal-menu li {
-    display:inline;
+h1, h2, h3, h4, h5, h6 ,b {
+    font-family: "IranSansBold", sans-serif;
 }
-.horizontal-menu li a{
-    display:block;
-    color:wheat;
-    text-align:center;
-    padding:14px 20px;
-    text-decoration:none;
+span {
+    font-family: "IranSansRegular", sans-serif;
+}
+a {
+    font-family: "IranSansRegular", sans-serif;
+}
+body {
+    font-family: "IranSansRegular", sans-serif;
 }
 
-.horizontal-menu li a:hover{
-    background-color: #111;
-}
+

@@ -1,49 +1,127 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+
+<html lang="fa-IR">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - TGNH.Panel</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/TGNH.Panel.styles.css" asp-append-version="true" />
+    <meta charset="utf-8">
+
+    <link rel="icon" type="image/x-icon" href="~/Crok/Rtl/src/assets/img/favicon.ico" />
+    <link href="~/Crok/Rtl/layouts/horizontal_dark_menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/site.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="~/Crok/Rtl/src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Cork/Rtl/layouts/horizontal-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="~/Cork/Rtl/layouts/horizontal-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
+
+
+    <link rel="stylesheet" type="text/css" href="~/Cork/Rtl/src/assets/css/light/elements/alert.css" />
+    <link rel="stylesheet" type="text/css" href="~/Cork/Rtl/src/assets/css/dark/elements/alert.css" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>@(ViewData["title"])</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="MR. Ebrahim Talaie" />
+    <meta name="description" content="A simple HTML5 Template" />
+    @* @await Component.InvokeAsync("Seo") *@
+
+    @* @await Component.InvokeAsync("OpenGraph") *@
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="image.png" />
+    <meta property="og:title" content="A Basic HTML Template" />
+    <meta property="og:url" content="https://asd.com/test/test" />
+    <meta property="og:description" content="A simple HTML5 Template" />
+
+    @* @await Component.InvokeAsync("FavoriteIcon") *@
+    <link rel="icon" type="image/x-icon" href="~/Cork/ltr/src/assets/img/favicon.ico" />
+
+    @* @await Component.InvokeAsync("StyleSheetHM") *@
+    <link href="~/cork/rtl/layout/horizontal_dark_menu/css/light/loader.css" rel="stylesheet" type="text/css" />
+    <link href="~/cork/rtl/layout/horizontal_dark_menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
+
+    <!-- <partial name="Layouts/Cork/Rtl/PartialViews/_StyleSheet" /> -->
+    
+    <environment include="Development" exclude="Production">
+
+        <link href="~/css/fontgoogle_1.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/lib/bootstrap/css/bootstrap.rtl.css" rel="stylesheet" type="text/css" asp-append-version="true" />
+        <link href="~/lib/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" type="text/css" asp-append-version="true" />
+
+    </environment>
+
+    <environment include="Production" exclude="Development">
+
+        <link href="~/css/fontgoogle_1.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/lib/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css" asp-append-version="true" />
+        <link href="~/lib/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" type="text/css" asp-append-version="true" />
+
+    </environment>
+
+    <link rel="stylesheet" href="~/@(nameof(Microsoft.AspNetCore.Mvc)).styles.css" asp-append-version="true" />
+
+
+
+    <link href="~/cork/rtl/layout/horizontal_dark_menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="~/cork/rtl/layout/horizontal_dark_menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
+
+    @RenderSection(name: "StyleSheet", required: false)
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">TGNH.Panel</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+<body class="layout-boxed enable-secondaryNav">
+
+    @await Component.InvokeAsync("Loder")
+    @await Component.InvokeAsync("Navbar")
+
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        @await Component.InvokeAsync("Sidebar")
+
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+
+            @await Component.InvokeAsync("Breadcrumbs")
+
+            @(RenderBody())
+            @await Component.InvokeAsync("Footer")
+        </div>
+        <!--  END CONTENT AREA  -->
+
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 1403 - TGNH.Panel - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    @* @await Component.InvokeAsync("ScriptsHM") *@
+    <!-- <partial name="Layouts/Cork/Rtl/PartialViews/_Scripts" /> -->
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <environment include="Development" exclude="Production">
+        <script src="~/lib/jquery/jquery.js" asp-append-version="true"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.bundle.js" asp-append-version="true"></script>
+        <script src="~/cork/rtl/src/plugins/src/waves/waves.min.js" asp-append-version="true"></script>
+        <script src="~/cork/rtl/src/plugins/src/mousetrap/mousetrap.min.js" asp-append-version="true"></script>
+        <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.js" asp-append-version="true"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" asp-append-version="true"></script>
+        <script src="~/cork/rtl/src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js" asp-append-version="true"></script>
+    </environment>
+
+    <environment include="Production" exclude="Development">
+        <script src="~/lib/jquery/jquery.min.js" asp-append-version="true"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
+        <script src="~/cork/rtl/src/plugins/src/waves/waves.min.js" asp-append-version="true"></script>
+        <script src="~/cork/rtl/src/plugins/src/mousetrap/mousetrap.min.js" asp-append-version="true"></script>
+        <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js" asp-append-version="true"></script>
+        <script src="~/cork/rtl/src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js" asp-append-version="true"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" asp-append-version="true"></script>
+    </environment>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <script src="~/cork/rtl/layout/horizontal_dark_menu/app.js" asp-append-version="true"></script>
+    <script src="~/cork/rtl/layout/horizontal_dark_menu/loader.js" asp-append-version="true"></script>
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+
+    @RenderSection(name: "Scripts", required: false)
+
 </body>
 </html>
