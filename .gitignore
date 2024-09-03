@@ -6,3 +6,13 @@
 /TGNH/.vs/TGNH
 /TGNH/TGNH.Panel/bin/Debug/net8.0
 /TGNH/TGNH.Panel/obj
+/TGNH/Application/obj/Debug/net8.0
+/TGNH/API/obj
+/TGNH/Domain/obj
+/TGNH/Domain.Test/obj
+/TGNH/KHN/obj
+/TGNH/KHN.Logging/obj
+/TGNH/KHN.Test/obj
+/TGNH/Persistence/obj
+/TGNH/Resources/obj
+/TGNH/ViewModel/obj
