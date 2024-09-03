@@ -16,3 +16,13 @@
 /TGNH/Persistence/obj
 /TGNH/Resources/obj
 /TGNH/ViewModel/obj
+/TGNH/API/bin/Debug/net8.0
+/TGNH/Application/bin/Debug/net8.0
+/TGNH/Persistence/bin/Debug/net8.0
+/TGNH/TGNH/bin/Debug/net8.0
+/TGNH/TGNH/obj
+/TGNH/TGNH.Logging/bin/Debug/net8.0
+/TGNH/TGNH.Logging/obj
+/TGNH/TGNH.Test/bin/Debug/net8.0
+/TGNH/TGNH.Test/obj
+/TGNH/ViewModel/bin/Debug/net8.0

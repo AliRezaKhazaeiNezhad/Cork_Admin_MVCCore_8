@@ -11,6 +11,7 @@
           "Domain": "1.0.0",
           "FluentResults": "3.16.0",
           "Microsoft.NET.Test.Sdk": "17.8.0",
+          "Resources": "1.0.0",
           "coverlet.collector": "6.0.0",
           "xunit": "2.5.3",
           "xunit.runner.visualstudio": "2.5.3"
@@ -1067,17 +1068,11 @@
       "Domain/1.0.0": {
         "dependencies": {
           "FluentResults": "3.16.0",
-          "KHN": "1.0.0",
           "MediatR": "12.4.0",
           "Resources": "1.0.0"
         },
         "runtime": {
           "Domain.dll": {}
-        }
-      },
-      "KHN/1.0.0": {
-        "runtime": {
-          "KHN.dll": {}
         }
       },
       "Resources/1.0.0": {
@@ -1752,11 +1747,6 @@
       "hashPath": "xunit.runner.visualstudio.2.5.3.nupkg.sha512"
     },
     "Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "KHN/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

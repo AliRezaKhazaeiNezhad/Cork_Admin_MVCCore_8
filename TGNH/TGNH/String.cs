@@ -1,4 +1,4 @@
-﻿namespace KHN
+﻿namespace TGNH
 {
     public static class String
     {
