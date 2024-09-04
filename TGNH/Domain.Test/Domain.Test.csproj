@@ -29,7 +29,8 @@
 
 
   <ItemGroup>
-    <Folder Include="Aggregates\" />
+    <Folder Include="Aggregates\Users\" />
+    <Folder Include="Aggregates\Profiles\" />
   </ItemGroup>
 
 </Project>
