@@ -9,6 +9,7 @@ namespace Domain.BaseEntities
 {
     public class User
     {
+        [Key]
         public int Id { get; set; }
         [MinLength(3)]
         [MaxLength(50)]
