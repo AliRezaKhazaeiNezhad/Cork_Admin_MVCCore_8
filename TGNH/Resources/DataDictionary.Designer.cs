@@ -79,6 +79,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to کد فعال سازی.
+        /// </summary>
+        public static string ActivationCode {
+            get {
+                return ResourceManager.GetString("ActivationCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to مدیر.
         /// </summary>
         public static string Admin {

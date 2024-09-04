@@ -26,10 +26,16 @@ namespace Domain.Aggregates.Users.ValueObjects
         {
             var result = new Result<HashedPassword>();
 
-            if (string.IsNullOrWhiteSpace(value) || value.Length != Fixlength)
+            if (value.Length != Fixlength)
             {
                 string errorMessage = string.Format(Validations.FixLength, DataDictionary.HashedPassword);
                 result.WithError(errorMessage);
+                return result;
+            }
+            if (value is null)
+            {
+                string errorMassge = string.Format(Validations.Required, DataDictionary.HashedPassword);
+                result.WithError(errorMassge);
                 return result;
             }
             if (!Regex.IsMatch(value, Pattern))

@@ -123,6 +123,9 @@
   <data name="AccountType" xml:space="preserve">
     <value>نوع کیف پول</value>
   </data>
+  <data name="ActivationCode" xml:space="preserve">
+    <value>کد فعال سازی</value>
+  </data>
   <data name="Admin" xml:space="preserve">
     <value>مدیر</value>
   </data>
