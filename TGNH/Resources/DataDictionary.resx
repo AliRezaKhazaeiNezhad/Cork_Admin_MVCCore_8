@@ -135,6 +135,9 @@
   <data name="CardNumber" xml:space="preserve">
     <value>شماره کارت</value>
   </data>
+  <data name="ExpireTimeActivationCode" xml:space="preserve">
+    <value>تاریخ انقضای کد فعال سازی</value>
+  </data>
   <data name="GhavaminBank" xml:space="preserve">
     <value>639599</value>
     <comment>بانک قوامین</comment>

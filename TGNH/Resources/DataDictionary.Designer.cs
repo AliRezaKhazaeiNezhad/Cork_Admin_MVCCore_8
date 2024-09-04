@@ -115,6 +115,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to تاریخ انقضای کد فعال سازی.
+        /// </summary>
+        public static string ExpireTimeActivationCode {
+            get {
+                return ResourceManager.GetString("ExpireTimeActivationCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 639599.
         /// </summary>
         public static string GhavaminBank {
