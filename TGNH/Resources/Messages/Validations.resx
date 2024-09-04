@@ -126,6 +126,12 @@
   <data name="InvalidCode" xml:space="preserve">
     <value>مقدار وارد شده برای {0} صحیح نمی باشد</value>
   </data>
+  <data name="IsMactch" xml:space="preserve">
+    <value>برای {0} از کاراکتر مجاز استفاده کنید</value>
+  </data>
+  <data name="LowerCase" xml:space="preserve">
+    <value>برای {0} از حروف کوچک استفاده کنید</value>
+  </data>
   <data name="MinLength" xml:space="preserve">
     <value>طول {0} کوتاه می باشد</value>
   </data>

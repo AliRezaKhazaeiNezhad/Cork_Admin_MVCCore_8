@@ -115,6 +115,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to رمز عبور هش شده.
+        /// </summary>
+        public static string HashedPassword {
+            get {
+                return ResourceManager.GetString("HashedPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ایران.
         /// </summary>
         public static string IR {

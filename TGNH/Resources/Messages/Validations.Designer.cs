@@ -88,6 +88,24 @@ namespace Resources.Messages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to برای {0} از کاراکتر مجاز استفاده کنید.
+        /// </summary>
+        public static string IsMactch {
+            get {
+                return ResourceManager.GetString("IsMactch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to برای {0} از حروف کوچک استفاده کنید.
+        /// </summary>
+        public static string LowerCase {
+            get {
+                return ResourceManager.GetString("LowerCase", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to طول {0} کوتاه می باشد.
         /// </summary>
         public static string MinLength {

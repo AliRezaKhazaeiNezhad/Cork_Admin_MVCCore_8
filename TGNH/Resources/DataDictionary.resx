@@ -136,6 +136,9 @@
   <data name="GoldenCoin" xml:space="preserve">
     <value>سکه طلا</value>
   </data>
+  <data name="HashedPassword" xml:space="preserve">
+    <value>رمز عبور هش شده</value>
+  </data>
   <data name="IR" xml:space="preserve">
     <value>ایران</value>
   </data>
