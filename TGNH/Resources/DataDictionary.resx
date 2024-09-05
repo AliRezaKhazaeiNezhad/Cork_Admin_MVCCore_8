@@ -138,6 +138,12 @@
   <data name="ExpireTimeActivationCode" xml:space="preserve">
     <value>تاریخ انقضای کد فعال سازی</value>
   </data>
+  <data name="Female" xml:space="preserve">
+    <value>خانم</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>جنسیت</value>
+  </data>
   <data name="GhavaminBank" xml:space="preserve">
     <value>639599</value>
     <comment>بانک قوامین</comment>
@@ -154,6 +160,9 @@
   <data name="KeshavarziBank" xml:space="preserve">
     <value>603770</value>
     <comment>بانک کشاورزی</comment>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>آقا</value>
   </data>
   <data name="MaskanBank" xml:space="preserve">
     <value>628023</value>
