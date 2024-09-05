@@ -123,11 +123,20 @@
   <data name="AccountType" xml:space="preserve">
     <value>نوع کیف پول</value>
   </data>
+  <data name="ActivationCode" xml:space="preserve">
+    <value>کد فعال سازی</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>مدیر</value>
+  </data>
   <data name="BankPreNumber" xml:space="preserve">
     <value>پیش شماره بانک</value>
   </data>
   <data name="CardNumber" xml:space="preserve">
     <value>شماره کارت</value>
+  </data>
+  <data name="ExpireTimeActivationCode" xml:space="preserve">
+    <value>تاریخ انقضای کد فعال سازی</value>
   </data>
   <data name="GhavaminBank" xml:space="preserve">
     <value>639599</value>
@@ -135,6 +144,9 @@
   </data>
   <data name="GoldenCoin" xml:space="preserve">
     <value>سکه طلا</value>
+  </data>
+  <data name="HashedPassword" xml:space="preserve">
+    <value>رمز عبور هش شده</value>
   </data>
   <data name="IR" xml:space="preserve">
     <value>ایران</value>
@@ -178,6 +190,9 @@
   <data name="Rial" xml:space="preserve">
     <value>ریال</value>
   </data>
+  <data name="Role" xml:space="preserve">
+    <value>نقش</value>
+  </data>
   <data name="SaderatBank" xml:space="preserve">
     <value>603769</value>
     <comment>بانک صادرات</comment>
@@ -205,8 +220,14 @@
   <data name="SilverCoin" xml:space="preserve">
     <value>سکه نقره</value>
   </data>
+  <data name="SuperAdmin" xml:space="preserve">
+    <value>مدیر کل</value>
+  </data>
   <data name="TejaratBank" xml:space="preserve">
     <value>627353</value>
     <comment>بانک تجارت</comment>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>کاربر</value>
   </data>
 </root>
