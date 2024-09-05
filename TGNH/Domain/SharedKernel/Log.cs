@@ -1,42 +1,44 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace TGNH.Logging
+namespace Domain.SharedKernel
 {
-	public class Log : object, ILog
+	public class Log
 	{
 		public Log() : base()
 		{
 		}
 
+		[Key]
+		public int Id { get; set; }
 
 
-		public LogLevel Level { get; set; }
-
-
-
-		public string Namespace { get; set; }
-
-		public string ClassName { get; set; }
-
-		public string MethodName { get; set; }
+		public int Level { get; set; }
 
 
 
-		public string RemoteIP { get; set; }
+		public string? Namespace { get; set; }
 
-		public string Username { get; set; }
+		public string? ClassName { get; set; }
 
-		public string RequestPath { get; set; }
-
-		public string HttpReferrer { get; set; }
+		public string? MethodName { get; set; }
 
 
 
-		public string Message { get; set; }
+		public string? RemoteIP { get; set; }
 
-		public string Parameters { get; set; }
+		public string? Username { get; set; }
 
-		public string Exceptions { get; set; }
+		public string? RequestPath { get; set; }
+
+		public string? HttpReferrer { get; set; }
+
+
+
+		public string? Message { get; set; }
+
+		public string? Parameters { get; set; }
+
+		public string? Exceptions { get; set; }
 
 		public override string ToString()
 		{
