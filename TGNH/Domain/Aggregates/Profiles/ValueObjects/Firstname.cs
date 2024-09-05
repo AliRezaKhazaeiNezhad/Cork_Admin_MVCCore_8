@@ -38,7 +38,7 @@ namespace Domain.Aggregates.Profiles.ValueObjects
             }
             if (!Regex.IsMatch(value, Pattern))
             {
-                string errorMessage = string.Format(Validations.IsMactch, DataDictionary.HashedPassword);
+                string errorMessage = string.Format(Validations.IsMactch, DataDictionary.FirstName);
                 result.WithError(errorMessage);
                 return result;
             }
