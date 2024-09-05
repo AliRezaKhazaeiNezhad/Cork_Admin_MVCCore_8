@@ -1069,7 +1069,7 @@ $.extend( $.validator, {
 			return string.replace( /([\\!"#$%&'()*+,./:;<=>?@\[\]^`{|}~])/g, "\\$1" );
 		},
 
-		idOrName: function( element ) {
+		idOrfunction( element ) {
 			return this.groups[ element.name ] || ( this.checkable( element ) ? element.name : element.id || element.name );
 		},
 
@@ -1088,7 +1088,7 @@ $.extend( $.validator, {
 			return ( /radio|checkbox/i ).test( element.type );
 		},
 
-		findByName: function( name ) {
+		findByfunction( name ) {
 			return $( this.currentForm ).find( "[name='" + this.escapeCssMeta( name ) + "']" );
 		},
 

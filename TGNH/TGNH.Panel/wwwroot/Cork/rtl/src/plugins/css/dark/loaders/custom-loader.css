@@ -67,8 +67,8 @@ body.dark .spinner-border {
   border: 0.25em solid;
   border-color: currentColor currentColor currentColor transparent;
   border-radius: 50%;
-  -webkit-animation-name: spinner-border;
-  animation-name: spinner-border;
+  -webkit-animation-spinner-border;
+  animation-spinner-border;
   -webkit-animation-duration: 0.75s;
   animation-duration: 0.75s;
   -webkit-animation-timing-function: linear;
@@ -130,8 +130,8 @@ body.dark .spinner-grow {
   text-indent: -999em;
   background-color: currentColor;
   border-radius: 50%;
-  -webkit-animation-name: spinner-grow;
-  animation-name: spinner-grow;
+  -webkit-animation-spinner-grow;
+  animation-spinner-grow;
   -webkit-animation-duration: 0.75s;
   animation-duration: 0.75s;
   -webkit-animation-timing-function: linear;

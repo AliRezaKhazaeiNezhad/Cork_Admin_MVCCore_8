@@ -780,8 +780,8 @@ body.dark .animatedFadeInUp {
 }
 body.dark .fadeInUp {
   opacity: 0;
-  animation-name: fadeInUp;
-  -webkit-animation-name: fadeInUp;
+  animation-fadeInUp;
+  -webkit-animation-fadeInUp;
 }
 @media (min-width: 1200px) {
   body.dark .main-container:not(.sidebar-closed) .mailbox-inbox .mail-item div.mail-item-heading .mail-item-inner .mail-content-excerpt {

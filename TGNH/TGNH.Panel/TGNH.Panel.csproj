@@ -54,4 +54,8 @@
     <PackageReference Include="NonFactors.Grid.Mvc6" Version="7.2.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TGNH.Logging\TGNH.Logging.csproj" />
+  </ItemGroup>
+
 </Project>

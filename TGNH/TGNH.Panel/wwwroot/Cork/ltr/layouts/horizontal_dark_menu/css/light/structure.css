@@ -1272,8 +1272,8 @@ body[layout=full-width] .sidebar-wrapper {
   }
 }
 .e-fadeInUp {
-  -webkit-animation-name: e-fadeInUp;
-  animation-name: e-fadeInUp;
+  -webkit-animation-e-fadeInUp;
+  animation-e-fadeInUp;
 }
 
 /*  

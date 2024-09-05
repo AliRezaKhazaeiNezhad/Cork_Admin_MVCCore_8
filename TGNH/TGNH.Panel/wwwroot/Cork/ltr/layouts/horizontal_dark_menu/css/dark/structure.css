@@ -1226,8 +1226,8 @@ body.dark .e-animated {
   }
 }
 body.dark .e-fadeInUp {
-  -webkit-animation-name: e-fadeInUp;
-  animation-name: e-fadeInUp;
+  -webkit-animation-e-fadeInUp;
+  animation-e-fadeInUp;
 }
 body.dark .footer-wrapper {
   padding: 10px 0 10px 0;

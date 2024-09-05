@@ -65,7 +65,7 @@
     <link href="~/cork/rtl/layout/horizontal_dark_menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
     <link href="~/cork/rtl/layout/horizontal_dark_menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
 
-    @RenderSection(name: "StyleSheet", required: false)
+    @RenderSection("StyleSheet", required: false)
 </head>
 <body class="layout-boxed enable-secondaryNav">
 
@@ -121,7 +121,7 @@
     <script src="~/cork/rtl/layout/horizontal_dark_menu/loader.js" asp-append-version="true"></script>
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
 
-    @RenderSection(name: "Scripts", required: false)
+    @RenderSection("Scripts", required: false)
 
 </body>
 </html>

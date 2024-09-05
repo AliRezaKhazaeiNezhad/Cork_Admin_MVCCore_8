@@ -1829,7 +1829,7 @@
 
 
   const applyStyles$1 = {
-    name: 'applyStyles',
+    'applyStyles',
     enabled: true,
     phase: 'write',
     fn: applyStyles,
@@ -2144,7 +2144,7 @@
 
 
   const arrow$1 = {
-    name: 'arrow',
+    'arrow',
     enabled: true,
     phase: 'main',
     fn: arrow,
@@ -2311,7 +2311,7 @@
 
 
   const computeStyles$1 = {
-    name: 'computeStyles',
+    'computeStyles',
     enabled: true,
     phase: 'beforeWrite',
     fn: computeStyles,
@@ -2358,7 +2358,7 @@
 
 
   const eventListeners = {
-    name: 'eventListeners',
+    'eventListeners',
     enabled: true,
     phase: 'write',
     fn: function fn() {},
@@ -2864,7 +2864,7 @@
 
 
   const flip$1 = {
-    name: 'flip',
+    'flip',
     enabled: true,
     phase: 'main',
     fn: flip,
@@ -2926,7 +2926,7 @@
 
 
   const hide$1 = {
-    name: 'hide',
+    'hide',
     enabled: true,
     phase: 'main',
     requiresIfExists: ['preventOverflow'],
@@ -2978,7 +2978,7 @@
 
 
   const offset$1 = {
-    name: 'offset',
+    'offset',
     enabled: true,
     phase: 'main',
     requires: ['popperOffsets'],
@@ -3002,7 +3002,7 @@
 
 
   const popperOffsets$1 = {
-    name: 'popperOffsets',
+    'popperOffsets',
     enabled: true,
     phase: 'read',
     fn: popperOffsets,
@@ -3137,7 +3137,7 @@
 
 
   const preventOverflow$1 = {
-    name: 'preventOverflow',
+    'preventOverflow',
     enabled: true,
     phase: 'main',
     fn: preventOverflow,
@@ -3404,7 +3404,7 @@
               state = fn({
                 state: state,
                 options: _options,
-                name: name,
+                name,
                 instance: instance
               }) || state;
             }
@@ -3448,7 +3448,7 @@
           if (typeof effect === 'function') {
             var cleanupFn = effect({
               state: state,
-              name: name,
+              name,
               instance: instance,
               options: options
             });
@@ -3759,12 +3759,12 @@
       const defaultBsPopperConfig = {
         placement: this._getPlacement(),
         modifiers: [{
-          name: 'preventOverflow',
+          'preventOverflow',
           options: {
             boundary: this._config.boundary
           }
         }, {
-          name: 'offset',
+          'offset',
           options: {
             offset: this._getOffset()
           }
@@ -3775,7 +3775,7 @@
       if (this._inNavbar || this._config.display === 'static') {
         Manipulator.setDataAttribute(this._menu, 'popper', 'static'); // TODO: v6 remove
         defaultBsPopperConfig.modifiers = [{
-          name: 'applyStyles',
+          'applyStyles',
           enabled: false
         }];
       }
@@ -3909,7 +3909,7 @@
   const CLASS_NAME_SHOW$5 = 'show';
   const EVENT_MOUSEDOWN = `mousedown.bs.${NAME$9}`;
   const Default$8 = {
-    className: 'modal-backdrop',
+    class'modal-backdrop',
     clickCallback: null,
     isAnimated: false,
     isVisible: true,
@@ -3918,7 +3918,7 @@
   };
 
   const DefaultType$8 = {
-    className: 'string',
+    class'string',
     clickCallback: '(function|null)',
     isAnimated: 'boolean',
     isVisible: 'boolean',
@@ -4663,7 +4663,7 @@
       // 'static' option will be translated to true, and booleans will keep their value
       const isVisible = Boolean(this._config.backdrop);
       return new Backdrop({
-        className: CLASS_NAME_BACKDROP,
+        classCLASS_NAME_BACKDROP,
         isVisible,
         isAnimated: true,
         rootElement: this._element.parentNode,
@@ -5306,27 +5306,27 @@
       const defaultBsPopperConfig = {
         placement: attachment,
         modifiers: [{
-          name: 'flip',
+          'flip',
           options: {
             fallbackPlacements: this._config.fallbackPlacements
           }
         }, {
-          name: 'offset',
+          'offset',
           options: {
             offset: this._getOffset()
           }
         }, {
-          name: 'preventOverflow',
+          'preventOverflow',
           options: {
             boundary: this._config.boundary
           }
         }, {
-          name: 'arrow',
+          'arrow',
           options: {
             element: `.${this.constructor.NAME}-arrow`
           }
         }, {
-          name: 'preSetPlacement',
+          'preSetPlacement',
           enabled: true,
           phase: 'beforeMain',
           fn: data => {

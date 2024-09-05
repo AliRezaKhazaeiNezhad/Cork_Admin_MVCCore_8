@@ -13,6 +13,5 @@ namespace Domain.Aggregates.Profiles
         public BirthDate BirthDate { get;private set; }
         public Firstname Fathername { get;private set; }
         public PassportNumber PassportNumber { get;private set; }
-        public Firstname Firstname { get;private set; }
     }
 }

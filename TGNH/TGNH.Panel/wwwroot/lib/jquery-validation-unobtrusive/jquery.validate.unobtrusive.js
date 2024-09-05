@@ -271,7 +271,7 @@
             fn = params;
             params = [];
         }
-        this.push({ name: adapterName, params: params, adapt: fn });
+        this.push({ adapterName, params: params, adapt: fn });
         return this;
     };
 

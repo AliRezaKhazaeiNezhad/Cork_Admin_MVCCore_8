@@ -804,8 +804,8 @@ input[type=file]::file-selector-button, input[type=file]::-webkit-file-upload-bu
 
 .fadeInUp {
   opacity: 0;
-  animation-name: fadeInUp;
-  -webkit-animation-name: fadeInUp;
+  animation-fadeInUp;
+  -webkit-animation-fadeInUp;
 }
 
 @media (min-width: 1200px) {

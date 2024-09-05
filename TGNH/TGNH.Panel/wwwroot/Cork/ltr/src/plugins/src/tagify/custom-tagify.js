@@ -232,7 +232,7 @@ var usrList = new Tagify(inputElm, {
     dropdown: {
         closeOnSelect: false,
         enabled: 0,
-        classname: 'users-list',
+        class'users-list',
         searchKeys: ['name', 'email']  // very important to set by which keys to search for suggesttions when typing
     },
     templates: {
@@ -341,7 +341,7 @@ function getAddAllSuggestionsElm(){
     // suggestions items should be based on "dropdownItem" template
     return usrList.parseTemplate('dropdownItem', [{
             class: "addAll",
-            name: "Add all",
+            "Add all",
             email: usrList.whitelist.reduce(function(remainingSuggestions, item){
                 return usrList.isTagDuplicate(item.value) ? remainingSuggestions : remainingSuggestions + 1
             }, 0) + " Members"

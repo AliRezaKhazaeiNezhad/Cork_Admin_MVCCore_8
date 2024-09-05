@@ -6255,7 +6255,7 @@ textarea.form-control-lg {
   --bs-spinner-vertical-align: -0.125em;
   --bs-spinner-border-width: 0.25em;
   --bs-spinner-animation-speed: 0.75s;
-  --bs-spinner-animation-name: spinner-border;
+  --bs-spinner-animation-spinner-border;
   border: var(--bs-spinner-border-width) solid currentcolor;
   border-right-color: transparent;
 }
@@ -6280,7 +6280,7 @@ textarea.form-control-lg {
   --bs-spinner-height: 2rem;
   --bs-spinner-vertical-align: -0.125em;
   --bs-spinner-animation-speed: 0.75s;
-  --bs-spinner-animation-name: spinner-grow;
+  --bs-spinner-animation-spinner-grow;
   background-color: currentcolor;
   opacity: 0;
 }

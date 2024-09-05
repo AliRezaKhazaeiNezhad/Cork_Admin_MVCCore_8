@@ -601,7 +601,7 @@
 
 .apexcharts-pie-label-delay {
   opacity: 0;
-  animation-name: opaque;
+  animation-opaque;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;

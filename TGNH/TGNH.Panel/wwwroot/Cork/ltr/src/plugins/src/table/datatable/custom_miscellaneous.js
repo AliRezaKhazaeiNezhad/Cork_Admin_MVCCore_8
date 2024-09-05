@@ -61,7 +61,7 @@ $(document).ready(function() {
         buttons: [
             {
                 text: 'Name',
-                className: 'btn btn-primary toggle-vis mb-1',
+                class'btn btn-primary toggle-vis mb-1',
                 action: function(e, dt, node, config ) {
                     var column = dt.column( 0 );
                     column.visible( ! column.visible() );
@@ -69,7 +69,7 @@ $(document).ready(function() {
             },
             {
                 text: 'Position',
-                className: 'btn btn-primary toggle-vis mb-1',
+                class'btn btn-primary toggle-vis mb-1',
                 action: function(e, dt, node, config ) {
                     var column = dt.column( 1 );
                     column.visible( ! column.visible() );
@@ -77,7 +77,7 @@ $(document).ready(function() {
             },
             {
                 text: 'Office',
-                className: 'btn btn-primary toggle-vis mb-1',
+                class'btn btn-primary toggle-vis mb-1',
                 action: function(e, dt, node, config ) {
                     var column = dt.column( 2 );
                     column.visible( ! column.visible() );
@@ -85,7 +85,7 @@ $(document).ready(function() {
             },
             {
                 text: 'Age',
-                className: 'btn btn-primary toggle-vis mb-1',
+                class'btn btn-primary toggle-vis mb-1',
                 action: function(e, dt, node, config ) {
                     var column = dt.column( 3 );
                     column.visible( ! column.visible() );
@@ -93,7 +93,7 @@ $(document).ready(function() {
             },
             {
                 text: 'Start date',
-                className: 'btn btn-primary toggle-vis mb-1',
+                class'btn btn-primary toggle-vis mb-1',
                 action: function(e, dt, node, config ) {
                     var column = dt.column( 4 );
                     column.visible( ! column.visible() );
@@ -101,7 +101,7 @@ $(document).ready(function() {
             },
             {
                 text: 'Salary',
-                className: 'btn btn-primary toggle-vis mb-1',
+                class'btn btn-primary toggle-vis mb-1',
                 action: function(e, dt, node, config ) {
                     var column = dt.column( 5 );
                     column.visible( ! column.visible() );
@@ -198,10 +198,10 @@ $(document).ready(function() {
     "<'dt--bottom-section d-sm-flex justify-content-sm-between text-center'<'dt--pages-count  mb-sm-0 mb-3'i><'dt--pagination'p>>",
         buttons: {
             buttons: [
-                { extend: 'copy', className: 'btn' },
-                { extend: 'csv', className: 'btn' },
-                { extend: 'excel', className: 'btn' },
-                { extend: 'print', className: 'btn' }
+                { extend: 'copy', class'btn' },
+                { extend: 'csv', class'btn' },
+                { extend: 'excel', class'btn' },
+                { extend: 'print', class'btn' }
             ]
         },
         "oLanguage": {

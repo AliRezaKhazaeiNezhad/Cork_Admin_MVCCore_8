@@ -623,9 +623,9 @@
   background-color: #fff;
   -webkit-align-self: flex-start;
   align-self: flex-start;
-  -moz-animation-name: slideFromLeft;
-  -webkit-animation-name: slideFromLeft;
-  animation-name: slideFromLeft;
+  -moz-animation-slideFromLeft;
+  -webkit-animation-slideFromLeft;
+  animation-slideFromLeft;
   -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
@@ -640,9 +640,9 @@
   background-color: #4361ee;
   -webkit-align-self: flex-end;
   align-self: flex-end;
-  -moz-animation-name: slideFromRight;
-  -webkit-animation-name: slideFromRight;
-  animation-name: slideFromRight;
+  -moz-animation-slideFromRight;
+  -webkit-animation-slideFromRight;
+  animation-slideFromRight;
   -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);

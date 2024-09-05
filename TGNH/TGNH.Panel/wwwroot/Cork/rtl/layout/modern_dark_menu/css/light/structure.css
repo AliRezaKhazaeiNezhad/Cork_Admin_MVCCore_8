@@ -1351,8 +1351,8 @@ body .navbar .dark-mode, body:not(.dark) .navbar .dark-mode {
   }
 }
 .e-fadeInUp {
-  -webkit-animation-name: e-fadeInUp;
-  animation-name: e-fadeInUp;
+  -webkit-animation-e-fadeInUp;
+  animation-e-fadeInUp;
 }
 
 /*  

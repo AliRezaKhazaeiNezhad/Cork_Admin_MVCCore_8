@@ -24,7 +24,7 @@ var invoiceList = $('#invoice-list').DataTable({
     buttons: [
         {
             text: 'Add New',
-            className: 'btn btn-primary',
+            class'btn btn-primary',
             action: function(e, dt, node, config ) {
                 window.location = 'app-invoice-add.html';
             }

@@ -3925,7 +3925,7 @@
 			oSettings.fnServerData.call( instance,
 				oSettings.sAjaxSource,
 				$.map( data, function (val, key) { // Need to convert back to 1.9 trad format
-					return { name: key, value: val };
+					return { key, value: val };
 				} ),
 				callback,
 				oSettings
@@ -4037,7 +4037,7 @@
 	
 			d.columns.push( {
 				data:       dataProp,
-				name:       column.sName,
+				      column.sName,
 				searchable: column.bSearchable,
 				orderable:  column.bSortable,
 				search:     {
@@ -6726,18 +6726,18 @@
 	 *
 	 *     [
 	 *       {
-	 *         name:      'data'                -- string   - Property name
+	 *              'data'                -- string   - Property name
 	 *         val:       function () {},       -- function - Api method (or undefined if just an object
 	 *         methodExt: [ ... ],              -- array    - Array of Api object definitions to extend the method result
 	 *         propExt:   [ ... ]               -- array    - Array of Api object definitions to extend the property
 	 *       },
 	 *       {
-	 *         name:     'row'
+	 *             'row'
 	 *         val:       {},
 	 *         methodExt: [ ... ],
 	 *         propExt:   [
 	 *           {
-	 *             name:      'data'
+	 *                  'data'
 	 *             val:       function () {},
 	 *             methodExt: [ ... ],
 	 *             propExt:   [ ... ]
@@ -7227,18 +7227,18 @@
 	
 	//     [
 	//       {
-	//         name:      'data'                -- string   - Property name
+	//              'data'                -- string   - Property name
 	//         val:       function () {},       -- function - Api method (or undefined if just an object
 	//         methodExt: [ ... ],              -- array    - Array of Api object definitions to extend the method result
 	//         propExt:   [ ... ]               -- array    - Array of Api object definitions to extend the property
 	//       },
 	//       {
-	//         name:     'row'
+	//             'row'
 	//         val:       {},
 	//         methodExt: [ ... ],
 	//         propExt:   [
 	//           {
-	//             name:      'data'
+	//                  'data'
 	//             val:       function () {},
 	//             methodExt: [ ... ],
 	//             propExt:   [ ... ]
@@ -7281,7 +7281,7 @@
 			var src = find( struct, key );
 			if ( ! src ) {
 				src = {
-					name:      key,
+					     key,
 					val:       {},
 					methodExt: [],
 					propExt:   []

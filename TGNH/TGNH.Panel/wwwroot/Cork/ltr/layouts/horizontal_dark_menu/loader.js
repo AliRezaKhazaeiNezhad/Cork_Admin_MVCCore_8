@@ -10,7 +10,7 @@ window.addEventListener("load", function(){
         admin: 'Cork Admin Template',
         settings: {
             layout: {
-                name: layoutName,
+                layoutName,
                 toggle: true,
                 darkMode: true,
                 boxed: true,

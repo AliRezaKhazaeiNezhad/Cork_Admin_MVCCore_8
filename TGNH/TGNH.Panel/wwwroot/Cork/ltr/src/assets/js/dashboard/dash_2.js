@@ -45,10 +45,10 @@ window.addEventListener("load", function(){
         },
         colors: ['#e2a03f', '#e0e6ed'],
         series: [{
-            name: 'Sales',
+            'Sales',
             data: [44, 55, 41, 67, 22, 43, 21]
         },{
-            name: 'Last Week',
+            'Last Week',
             data: [13, 23, 20, 8, 13, 27, 33]
         }],
         xaxis: {
@@ -136,7 +136,7 @@ window.addEventListener("load", function(){
           }
         },
         series: [{
-          name: 'Sales',
+          'Sales',
           data: [28, 40, 36, 52, 38, 60, 38, 52, 36, 40]
         }],
         labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
@@ -234,10 +234,10 @@ window.addEventListener("load", function(){
             lineCap: 'square'
         },
         series: [{
-            name: 'Expenses',
+            'Expenses',
             data: [16800, 16800, 15500, 14800, 15500, 17000, 21000, 16000, 15000, 17000, 14000, 17000]
         }, {
-            name: 'Income',
+            'Income',
             data: [16500, 17500, 16200, 17300, 16000, 21500, 16000, 17000, 16000, 19000, 18000, 19000]
         }],
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
@@ -385,7 +385,7 @@ window.addEventListener("load", function(){
                 background: 'transparent',
                 labels: {
                   show: true,
-                  name: {
+                  {
                     show: true,
                     fontSize: '29px',
                     fontFamily: 'Nunito, sans-serif',
@@ -490,10 +490,10 @@ window.addEventListener("load", function(){
         },
         colors: ['#e2a03f', '#e0e6ed'],
         series: [{
-            name: 'Sales',
+            'Sales',
             data: [44, 55, 41, 67, 22, 43, 21]
         },{
-            name: 'Last Week',
+            'Last Week',
             data: [13, 23, 20, 8, 13, 27, 33]
         }],
         xaxis: {
@@ -582,7 +582,7 @@ window.addEventListener("load", function(){
           // }
         },
         series: [{
-          name: 'Sales',
+          'Sales',
           data: [28, 40, 36, 52, 38, 60, 38, 52, 36, 40]
         }],
         labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
@@ -680,10 +680,10 @@ window.addEventListener("load", function(){
             lineCap: 'square'
         },
         series: [{
-            name: 'Expenses',
+            'Expenses',
             data: [16800, 16800, 15500, 14800, 15500, 17000, 21000, 16000, 15000, 17000, 14000, 17000]
         }, {
-            name: 'Income',
+            'Income',
             data: [16500, 17500, 16200, 17300, 16000, 21500, 16000, 17000, 16000, 19000, 18000, 19000]
         }],
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
@@ -831,7 +831,7 @@ window.addEventListener("load", function(){
                 background: 'transparent',
                 labels: {
                   show: true,
-                  name: {
+                  {
                     show: true,
                     fontSize: '29px',
                     fontFamily: 'Nunito, sans-serif',

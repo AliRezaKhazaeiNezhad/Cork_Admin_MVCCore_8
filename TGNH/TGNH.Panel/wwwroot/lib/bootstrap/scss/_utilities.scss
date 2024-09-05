@@ -87,7 +87,7 @@ $utilities: map-merge(
     // scss-docs-start utils-focus-ring
     "focus-ring": (
       css-var: true,
-      css-variable-name: focus-ring-color,
+      css-variable-focus-ring-color,
       class: focus-ring,
       values: map-loop($theme-colors-rgb, rgba-css-var, "$key", "focus-ring")
     ),

@@ -10,6 +10,10 @@ internal class Program
         builder.Services.AddControllersWithViews();
         builder.Services.AddMvcGrid();
 
+        builder.Services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
+        builder.Services.AddTransient(typeof(TGNH.Logging.ILogger<>), typeof(TGNH.Logging.NLogAdapter<>));
+        builder.Services.AddTransient(typeof(TGNH.Logging.ILogger<>), typeof(TGNH.Logging.NLogAdapter<>));
+
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
@@ -22,7 +26,7 @@ internal class Program
         app.UseStatusCodePagesWithReExecute("/Error404");
 
         app.MapControllerRoute(
-             name: "Error404",
+             "Error404",
              pattern: "/Error404",
              defaults: new { controller = "Home", action = "Error404" });
 
@@ -31,7 +35,7 @@ internal class Program
         app.UseAuthorization();
 
         app.MapControllerRoute(
-            name: "default",
+            "default",
             pattern: "{controller=Home}/{action=Index}/{id?}");
 
         app.Run();

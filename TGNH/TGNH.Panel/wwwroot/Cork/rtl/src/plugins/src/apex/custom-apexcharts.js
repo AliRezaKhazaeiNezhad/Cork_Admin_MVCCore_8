@@ -37,7 +37,7 @@ window.addEventListener("load", function(){
             curve: 'straight'
         },
         series: [{
-            name: "Desktops",
+            "Desktops",
             data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
         }],
         title: {
@@ -74,10 +74,10 @@ window.addEventListener("load", function(){
                 curve: 'smooth'
             },
             series: [{
-                name: 'series1',
+                'series1',
                 data: [31, 40, 28, 51, 42, 109, 100]
             }, {
-                name: 'series2',
+                'series2',
                 data: [11, 32, 45, 32, 34, 52, 41]
             }],
             legend: {
@@ -130,10 +130,10 @@ window.addEventListener("load", function(){
                 colors: ['transparent']
             },
             series: [{
-                name: 'Net Profit',
+                'Net Profit',
                 data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
             }, {
-                name: 'Revenue',
+                'Revenue',
                 data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
             }],
             legend: {
@@ -198,16 +198,16 @@ window.addEventListener("load", function(){
                 },
             },
             series: [{
-                name: 'PRODUCT A',
+                'PRODUCT A',
                 data: [44, 55, 41, 67, 22, 43]
             },{
-                name: 'PRODUCT B',
+                'PRODUCT B',
                 data: [13, 23, 20, 8, 13, 27]
             },{
-                name: 'PRODUCT C',
+                'PRODUCT C',
                 data: [11, 17, 15, 15, 21, 14]
             },{
-                name: 'PRODUCT D',
+                'PRODUCT D',
                 data: [21, 7, 25, 13, 22, 8]
             }],
             xaxis: {
@@ -273,11 +273,11 @@ window.addEventListener("load", function(){
             }
         },
         series: [{
-            name: 'Website Blog',
+            'Website Blog',
             type: 'column',
             data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
         }, {
-            name: 'Social Media',
+            'Social Media',
             type: 'line',
             data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
         }],
@@ -374,7 +374,7 @@ window.addEventListener("load", function(){
             plotOptions: {
                 radialBar: {
                     dataLabels: {
-                        name: {
+                        {
                             fontSize: '22px',
                         },
                         value: {
@@ -428,7 +428,7 @@ window.addEventListener("load", function(){
             curve: 'straight'
         },
         series: [{
-            name: "Desktops",
+            "Desktops",
             data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
         }],
         title: {
@@ -465,10 +465,10 @@ window.addEventListener("load", function(){
                 curve: 'smooth'
             },
             series: [{
-                name: 'series1',
+                'series1',
                 data: [31, 40, 28, 51, 42, 109, 100]
             }, {
-                name: 'series2',
+                'series2',
                 data: [11, 32, 45, 32, 34, 52, 41]
             }],
             legend: {
@@ -521,10 +521,10 @@ window.addEventListener("load", function(){
                 colors: ['transparent']
             },
             series: [{
-                name: 'Net Profit',
+                'Net Profit',
                 data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
             }, {
-                name: 'Revenue',
+                'Revenue',
                 data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
             }],
             legend: {
@@ -589,16 +589,16 @@ window.addEventListener("load", function(){
                 },
             },
             series: [{
-                name: 'PRODUCT A',
+                'PRODUCT A',
                 data: [44, 55, 41, 67, 22, 43]
             },{
-                name: 'PRODUCT B',
+                'PRODUCT B',
                 data: [13, 23, 20, 8, 13, 27]
             },{
-                name: 'PRODUCT C',
+                'PRODUCT C',
                 data: [11, 17, 15, 15, 21, 14]
             },{
-                name: 'PRODUCT D',
+                'PRODUCT D',
                 data: [21, 7, 25, 13, 22, 8]
             }],
             xaxis: {
@@ -664,11 +664,11 @@ window.addEventListener("load", function(){
             }
         },
         series: [{
-            name: 'Website Blog',
+            'Website Blog',
             type: 'column',
             data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
         }, {
-            name: 'Social Media',
+            'Social Media',
             type: 'line',
             data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
         }],
@@ -765,7 +765,7 @@ window.addEventListener("load", function(){
             plotOptions: {
                 radialBar: {
                     dataLabels: {
-                        name: {
+                        {
                             fontSize: '22px',
                         },
                         value: {

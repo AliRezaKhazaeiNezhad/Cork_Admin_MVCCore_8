@@ -4,6 +4,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
+builder.Services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddTransient(typeof(TGNH.Logging.ILogger<>), typeof(TGNH.Logging.NLogAdapter<>));
+builder.Services.AddTransient(typeof(TGNH.Logging.ILogger<>),typeof(TGNH.Logging.NLogAdapter<>));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -26,7 +26,7 @@
   --#{$prefix}spinner-vertical-align: #{$spinner-vertical-align};
   --#{$prefix}spinner-border-width: #{$spinner-border-width};
   --#{$prefix}spinner-animation-speed: #{$spinner-animation-speed};
-  --#{$prefix}spinner-animation-name: spinner-border;
+  --#{$prefix}spinner-animation-spinner-border;
   // scss-docs-end spinner-border-css-vars
 
   border: var(--#{$prefix}spinner-border-width) solid currentcolor;
@@ -63,7 +63,7 @@
   --#{$prefix}spinner-height: #{$spinner-height};
   --#{$prefix}spinner-vertical-align: #{$spinner-vertical-align};
   --#{$prefix}spinner-animation-speed: #{$spinner-animation-speed};
-  --#{$prefix}spinner-animation-name: spinner-grow;
+  --#{$prefix}spinner-animation-spinner-grow;
   // scss-docs-end spinner-grow-css-vars
 
   background-color: currentcolor;

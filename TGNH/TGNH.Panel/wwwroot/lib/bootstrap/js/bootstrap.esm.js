@@ -1916,12 +1916,12 @@ class Dropdown extends BaseComponent {
     const defaultBsPopperConfig = {
       placement: this._getPlacement(),
       modifiers: [{
-        name: 'preventOverflow',
+        'preventOverflow',
         options: {
           boundary: this._config.boundary
         }
       }, {
-        name: 'offset',
+        'offset',
         options: {
           offset: this._getOffset()
         }
@@ -1932,7 +1932,7 @@ class Dropdown extends BaseComponent {
     if (this._inNavbar || this._config.display === 'static') {
       Manipulator.setDataAttribute(this._menu, 'popper', 'static'); // TODO: v6 remove
       defaultBsPopperConfig.modifiers = [{
-        name: 'applyStyles',
+        'applyStyles',
         enabled: false
       }];
     }
@@ -2066,7 +2066,7 @@ const CLASS_NAME_FADE$4 = 'fade';
 const CLASS_NAME_SHOW$5 = 'show';
 const EVENT_MOUSEDOWN = `mousedown.bs.${NAME$9}`;
 const Default$8 = {
-  className: 'modal-backdrop',
+  class'modal-backdrop',
   clickCallback: null,
   isAnimated: false,
   isVisible: true,
@@ -2075,7 +2075,7 @@ const Default$8 = {
 };
 
 const DefaultType$8 = {
-  className: 'string',
+  class'string',
   clickCallback: '(function|null)',
   isAnimated: 'boolean',
   isVisible: 'boolean',
@@ -2820,7 +2820,7 @@ class Offcanvas extends BaseComponent {
     // 'static' option will be translated to true, and booleans will keep their value
     const isVisible = Boolean(this._config.backdrop);
     return new Backdrop({
-      className: CLASS_NAME_BACKDROP,
+      classCLASS_NAME_BACKDROP,
       isVisible,
       isAnimated: true,
       rootElement: this._element.parentNode,
@@ -3463,27 +3463,27 @@ class Tooltip extends BaseComponent {
     const defaultBsPopperConfig = {
       placement: attachment,
       modifiers: [{
-        name: 'flip',
+        'flip',
         options: {
           fallbackPlacements: this._config.fallbackPlacements
         }
       }, {
-        name: 'offset',
+        'offset',
         options: {
           offset: this._getOffset()
         }
       }, {
-        name: 'preventOverflow',
+        'preventOverflow',
         options: {
           boundary: this._config.boundary
         }
       }, {
-        name: 'arrow',
+        'arrow',
         options: {
           element: `.${this.constructor.NAME}-arrow`
         }
       }, {
-        name: 'preSetPlacement',
+        'preSetPlacement',
         enabled: true,
         phase: 'beforeMain',
         fn: data => {
