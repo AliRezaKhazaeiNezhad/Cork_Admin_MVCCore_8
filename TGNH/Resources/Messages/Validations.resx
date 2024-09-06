@@ -126,6 +126,9 @@
   <data name="InvalidCode" xml:space="preserve">
     <value>مقدار وارد شده برای {0} صحیح نمی باشد</value>
   </data>
+  <data name="InValidValue" xml:space="preserve">
+    <value>مقدار {0} نامعتبر می باشد</value>
+  </data>
   <data name="IsMactch" xml:space="preserve">
     <value>برای {0} از کاراکتر مجاز استفاده کنید</value>
   </data>

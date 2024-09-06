@@ -88,6 +88,15 @@ namespace Resources.Messages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to مقدار {0} نامعتبر می باشد.
+        /// </summary>
+        public static string InValidValue {
+            get {
+                return ResourceManager.GetString("InValidValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to برای {0} از کاراکتر مجاز استفاده کنید.
         /// </summary>
         public static string IsMactch {

@@ -26,8 +26,8 @@ namespace Domain.Aggregates.Profiles.ValueObjects
             var result = new Result<Firstname>();
             if (value is null) 
             {
-                string errorMassge = string.Format(Validations.Required, DataDictionary.FirstName);
-                result.WithError(errorMassge);
+                string errorMessage = string.Format(Validations.Required, DataDictionary.FirstName);
+                result.WithError(errorMessage);
                 return result;
             }
             if (value.Length > FixLength)
